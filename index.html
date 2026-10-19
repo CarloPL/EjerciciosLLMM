@@ -1,109 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>IES Augustóbriga</title>
-    <meta name="description" content="Página Web del IES Augustóbriga">
-    <link rel="stylesheet" href="css/Test.css">
+    <meta name="desription" content="Página web del IES Augustóbriga" />
+    <link rel="stylesheet" href="css/estilos.css" />
 </head>
+
 <body>
-    <div id="cabecera">
-        <header><h1>IES Augustóbriga</h1></header>
-        <img src="/imagenes/logo.png" alt="logo" id="logo">
-        <nav>Inicio | <a href="#noticias">Noticias</a> | <a href="#actividades">Actividades</a> | Contacto | <a href="https://iesaugustobriga.educarex.es/" target="_blank" title="Visita el IES Augustóbriga">Visita el IES</a> | <a href="https://www.educarex.es/fp.html" target="_blank" title="Portal Educacion"> Estudia FP</a></nav>
-        <hr id="barranav">
-    </div>
+    <header>
+        <h1>IES Augustóbriga</h1>
+    </header>
+    <nav>Inicio | Noticias | Contacto</nav>
     <main>
-        <table class="tabla">
-            <caption> Referencias aplicada a Don Quijote</caption>
-            <colgroup>
-                <col class="datos" span="2">
-                <col class="total">
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>Parte</th>
-                    <th>Nombre</th>
-                    <th>Comentario</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Primera</td>
-                    <td>Don Quijote de la Mancha</td>
-                    <td>Ideado por él mismo</td>
-                </tr>
-                <tr>
-                    <td>Segunda</td>
-                    <td>Caballero de los leones</td>
-                    <td>Apelativo creado por Don Quijote</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="2">Total referencia</th>
-                    <th>2</th>
-                </tr>
-            </tfoot>
-        </table>
         <section id="noticias">
             <h2>Noticias</h2>
-            <div class="noticia" id="noticia1">
-                <h3>Se encuentran más de 27kg de Hachis en Navalmoral de la Mata</h3>
-                <p>En la finca de la familia Gonzalez han sido hayados mas de <mark>27Kg</mark> de <strong>Hachis</strong> escondidos en el trastero</p>
-            </div>
-            <br>
-            <div class="noticia" id="noticia2">
-                <h3>El primer dia del moralia fue un absoluto fracaso</h3>
-                <p>El primer dia del festival moralia fueron vendidas 100 entradas y solo se presentaron 4 personas</p>
-            </div>
+            <article id="noticia1" class="noticia">
+                <h3>Nuevo laboratorio de informática</h3>
+                <p>El centro estrena <mark>equipos nuevos</mark> este curso.</p>
+            </article>
+            <article id="noticia2" class="noticia">
+                <h3>Jornada de puertas abiertas</h3>
+                <p><strong>Sábado 14</strong>, de 10:00 a 13:00 horas.</p>
+            </article>
         </section>
+        <footer>
+            <address>Curso 2025-26 <br> Antonio Concha, 71 <br>Navalmoral de la Mata</address>
+        </footer>
+
         <section id="actividades">
             <h2>Actividades</h2>
-            <ul>
-                <li>Robotica</li>
-                <li>Teatro</li>
-                <li>Ajedrez</li>
-            </ul>
         </section>
-        <table class="tabla">
-            <caption>Horario Semanal</caption>
-            <thead>
-                <tr>
-                    <th>Día</th>
-                    <th>Hora</th>
-                    <th>Aula</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>19/04/2026</td>
-                    <td>12:15 - 14:14</td>
-                    <td>1º DAM</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>Total de Horas</th>
-                    <th colspan="2">2h</th>
-                </tr>
-            </tfoot>
-        </table>
     </main>
-    <aside id="eventos">Próximos eventos</aside>
-        <ol>
-            <li>Puertas abiertas</li>
-            <li>Entrega de Notas</li>
-            <li>Fiesta fin de curso</li>
-        </ol>
-    <details>
-        <summary>Horario de Secretaria</summary>
-        <p>Lunes a Viernes | 9:00 - 14:00</p>
-    </details>
-    <br>
-    <footer>
-        <p>Curso 26/27</p>
-        <p><em>Direción: Antonio Concha, 71 - Navalmoral de la Mata</em></p>
-    </footer>
+    <aside>Próximos eventos</aside>
+    <footer>Curso 2026-27 Atonio Concha 71<br> Navalmoral de la Mata</footer>
+
 </body>
+
 </html>
