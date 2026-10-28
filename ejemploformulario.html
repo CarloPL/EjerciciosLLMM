@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Formularios</h1>
+    <table
+      style="
+        border: 2px solid black;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    >
+      <form
+        action="manejador.html"
+        enctype="multipart/form-data"
+        method="post"
+        name="formtipos"
+        id="formularios"
+      ></form>
+      <tr>
+        <td>
+          <p>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" maxlength="15" />
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Edades:</strong>
+          <p>
+            <label>
+              <input
+                type="radio"
+                name="etapa"
+                id="menos20"
+                value="joven"
+              />Menos 20 años
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="etapa" id="20y40" value="adulto" />Entre
+              20 y 40 años
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="etapa" id="41y60" value="maduro" />Entre
+              41 y 60 años
+            </label>
+          </p>
+          <p>
+            <label>
+              <input
+                type="radio"
+                name="etapa"
+                id="61y80"
+                value="anciano"
+              />Entre 61 y 80 años
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="etapa" id="mas80" value="cadaver" />Mas
+              de 80
+            </label>
+          </p>
+        </td>
+        <td>
+          <p>
+            <strong>Aficiones:</strong>
+          </p>
+          <p>
+            <label for="andarin">
+              <input
+                type="checkbox"
+                name="andar"
+                id="andarin"
+                value="si"
+                form="formularios"
+              />Senderismo
+            </label>
+          </p>
+          <p>
+            <label for="lector">
+              <input
+                type="checkbox"
+                name="leer"
+                id="lector"
+                value="si"
+                form="formularios"
+              />Lectura
+            </label>
+          </p>
+          <p>
+            <label for="turista">
+              <input
+                type="checkbox"
+                name="turismo"
+                id="turista"
+                value="si"
+                form="formularios"
+              />Turismo
+            </label>
+          </p>
+          <p>
+            <label for="cinefilo">
+              <input
+                type="checkbox"
+                name="cine"
+                id="cinefilo"
+                value="si"
+                form="formularios"
+              />Cine
+            </label>
+          </p>
+          <p>
+            <label for="fotografo">
+              <input
+                type="checkbox"
+                name="fotografia"
+                id="fotografo"
+                value="si"
+                form="formularios"
+              />Fotografia
+            </label>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Introduce la Fecha</h3>
+          <p>
+            <label for="fecha">
+              <input type="date" name="fecha" id="fecha" value="2026-01-01" />
+            </label>
+          </p>
+        </td>
+        <td>
+          <h3>Seleccionar Color</h3>
+          <p>
+            <input type="color" name="colorido" id="color" value="#4e4e4e" />
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Rango de Valores</h3>
+          <p>
+            <input
+              type="range"
+              name="valoresrango"
+              id="rango"
+              value="50"
+              min="0"
+              max="100"
+              step="10"
+              list="tickmarks"
+            />
+          </p>
+        </td>
+        <td>
+          <h3>Seleccionar fichero:</h3>
+          <p>
+            <input
+              type="file"
+              name="fichero"
+              id="fichero"
+              accept=".pdf,.doc,.docx"
+            />
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td id="boton1" style="text-align: center;">
+          <input type="submit" value="Enviar" id="enviar" form="formularios" />
+        </td>
+        <td id="boton2" style="text-align: center;">
+          <input type="reset" value="Reiniciar" id="reiniciar" form="formularios" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

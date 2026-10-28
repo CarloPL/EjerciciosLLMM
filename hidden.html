@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>...</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      user-select: none;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 85vw;
+      max-height: 85vh;
+      object-fit: contain;
+      pointer-events: none;
+      opacity: 0;
+      filter: blur(20px);
+      transition: opacity 0.08s linear, filter 0.08s linear;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="img" src="imagenes/images (3).jpeg" alt="">
+
+  <script>
+    const TOTAL_CLICKS = 100;
+    let clicks = 0;
+    const img = document.getElementById('img');
+
+    window.addEventListener('click', () => {
+      if (clicks < TOTAL_CLICKS) {
+        clicks++;
+        const progress = clicks / TOTAL_CLICKS;
+
+        img.style.opacity = progress;
+        img.style.filter = `blur(${(1 - progress) * 20}px)`;
+      }
+    });
+  </script>
+</body>
+</html>
