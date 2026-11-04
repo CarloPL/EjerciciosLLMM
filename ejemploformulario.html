@@ -178,11 +178,59 @@
         </td>
       </tr>
       <tr>
-        <td id="boton1" style="text-align: center;">
+        <td>
+          <label for="micajatexto"><strong>Escribre texto:</strong></label>
+          <br />
+          <textarea
+            name="cajatexto"
+            id="micajatexto"
+            rows="5"
+            cols="20"
+          ></textarea>
+        </td>
+        <td>
+          <select name="pais" id="paises">
+            <option value="es">España</option>
+            <option value="pt">Portugal</option>
+            <option value="fr">Francia</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <fieldset>
+            <legend><strong>Concesionarios</strong></legend>
+            <p>
+              <label for="coches"><strong>Selecciona un coche: </strong></label>
+            </p>
+            <p>
+              <select name="selcoches" id="coches">
+                <optgroup label="Berlinas">
+                  <option value="1B">Volvo</option>
+                  <option value="2B">Mercedes</option>
+                  <option value="3B">Audi</option>
+                </optgroup>
+                <optgroup label="Suv">
+                  <option value="1S">Toyota</option>
+                  <option value="2S">Renault</option>
+                  <option value="3S">Mazda</option>
+                </optgroup>
+              </select>
+            </p>
+          </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <td id="boton1" style="text-align: center">
           <input type="submit" value="Enviar" id="enviar" form="formularios" />
         </td>
-        <td id="boton2" style="text-align: center;">
-          <input type="reset" value="Reiniciar" id="reiniciar" form="formularios" />
+        <td id="boton2" style="text-align: center">
+          <input
+            type="reset"
+            value="Reiniciar"
+            id="reiniciar"
+            form="formularios"
+          />
         </td>
       </tr>
     </table>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 20px 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 10px 5px;
+    }
+  </style>
+  <body>
+    <h1>INDUSTRIAS EXTREMEÑAS S.A.</h1>
+    <form action="formulario">
+      <fieldset>
+        <legend>FORMULARIO PEDIDO</legend>
+        <h3><strong> > Paso 1. Identificación</strong></h3>
+        <table>
+          <tr>
+            <td>
+              <fieldset>
+                <legend>Datos del Cliente</legend>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" size="15" />
+                <br />
+                <br />
+                <label for="password">Contraseña</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="6"
+                />
+                <p>(Longitud mínima 6 caracteres)</p>
+              </fieldset>
+            </td>
+            <td>
+              <fieldset>
+                <legend>Tipo de Cliente</legend>
+                <p>
+                  <label for="particular">
+                    <input
+                      type="radio"
+                      name="particular"
+                      id="particular"
+                    />Particular
+                  </label>
+                </p>
+                <p>
+                  <label for="asociacion">
+                    <input
+                      type="radio"
+                      name="asociacion"
+                      id="asociacion"
+                    />Asociación
+                  </label>
+                </p>
+                <p>
+                  <label for="empresa">
+                    <input type="radio" name="empresa" id="empresa" />Empresa
+                  </label>
+                </p>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+        <h3><strong> > Paso 2. Pedido</strong></h3>
+        <table>
+          <tr>
+            <td>
+              <fieldset>
+                <legend>Datos del Producto</legend>
+                <p><label for="productos">Producto</label></p>
+                <p>
+                  <select name="prods" id="prods" size="7">
+                    <optgroup label="Armaduras">
+                      <option value="AR001">AR001 Oro Reluciente</option>
+                      <option value="AR002">AR002 Plata Pulida</option>
+                      <option value="AR003">AR003 Bronce Reforzado</option>
+                    </optgroup>
+                    <optgroup label="Extras">
+                      <option value="EX001">EX001 Escudo</option>
+                      <option value="EX002">EX002 Invisibilidad</option>
+                    </optgroup>
+                  </select>
+                </p>
+              </fieldset>
+            </td>
+            <td>
+              <fieldset>
+                <legend>Información de Interes</legend>
+                <label for="comment">Comentarios</label>
+                <br />
+                <textarea
+                  name="comment"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Escriba aquí sus comentarios"
+                ></textarea>
+                <br />
+                <label for="publi">
+                  <input type="checkbox" name="publi" id="publi" />Acepto
+                  recibir información publicitaria
+                </label>
+              </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <fieldset>
+                <legend>Datos de Envío</legend>
+                <label for="address">Dirección</label>
+                <input type="text" name="address" id="address" size="30" />
+                <br />
+                <br />
+                <label for="city">Ciudad</label>
+                <input type="text" name="city" id="city" size="12" />
+                <br />
+                <br />
+                <label for="cp">Código Postal</label>
+                <input type="text" name="cp" id="cp" size="6" />
+              </fieldset>
+            </td>
+            <td>
+              <fieldset>
+                <legend>Datos Bancarios</legend>
+                <label for="entidad">Nombre de la Entidad</label>
+                <input type="text" name="entidad" id="entidad" />
+                <br />
+                <br />
+                <label for="cuenta">Nº de cuenta</label>
+                <input type="text" name="cuenta" id="cuenta" />
+              </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td id="boton1" style="text-align: center">
+              <button type="submit">
+                <img src="/imagenes/enviar.png" alt="enviar" />
+              </button>
+            </td>
+            <td id="boton2" style="text-align: center">
+              <button type="reset">
+                <img src="/imagenes/reiniciar.png" alt="enviar" />
+              </button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
